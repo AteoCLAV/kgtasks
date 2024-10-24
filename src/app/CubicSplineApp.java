@@ -14,10 +14,20 @@ public class CubicSplineApp extends JPanel {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                points.add(e.getPoint());
+                addPoint(e.getPoint());
                 repaint();
             }
         });
+    }
+    private void addPoint(Point point) {
+        for (Point p : points) {
+            if (p.equals(point)) {
+                System.out.println("Точка " + point + " уже существует в графике.");
+                return;
+            }
+        }
+        points.add(point);
+        System.out.println("Точка " + point + " успешно добавлена.");
     }
 
     @Override
