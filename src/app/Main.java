@@ -8,7 +8,7 @@ public class Main {
         JFrame frame = new JFrame("Cubic Spline Interpolation");
         CubicSplineApp app = new CubicSplineApp();
         frame.add(app);
-        frame.setSize(800, 600);
+        frame.setSize(1000, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
