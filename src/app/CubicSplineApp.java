@@ -50,8 +50,8 @@ public class CubicSplineApp extends JPanel {
 
     private void drawAxes(Graphics g) {
         g.setColor(Color.LIGHT_GRAY);
-        g.drawLine(0, getHeight() / 2, getWidth(), getHeight() / 2); // X-axis
-        g.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight()); // Y-axis
+        g.drawLine(0, getHeight() / 2, getWidth(), getHeight() / 2);
+        g.drawLine(getWidth() / 2, 0, getWidth() / 2, getHeight());
     }
 
     private void drawPoints(Graphics g) {
